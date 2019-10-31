@@ -37,12 +37,6 @@ hs_err_pid*
 .idea/**/dictionaries
 .idea/**/shelf
 
-.idea/$PRODUCT_WORKSPACE_FILE$
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/Wild-Thing.iml
-
 # Generated files
 .idea/**/contentModel.xml
 
