@@ -8,10 +8,10 @@ public class User
         private String gender;
         private String name;
         private String userName;
-       // private Password myPassword;
+        private Password myPassword;
 
 
-        public User (int myAge, double myWeight, double myLenght, String myGender, String myName, String myUserName/*,Password myUserPassword*/)
+        public User (int myAge, double myWeight, double myLenght, String myGender, String myName, String myUserName, Password myUserPassword)
             {
                 this.age=myAge;
                 this.weight=myWeight;
@@ -19,7 +19,7 @@ public class User
                 this.gender=myGender;
                 this.name=myName;
                 this.userName=myUserName;
-            //    this.myPassword=myUserPassword;
+                this.myPassword=myUserPassword;
             }
 
 
@@ -59,6 +59,13 @@ public class User
 
         public void setLenght(double newLenght) { lenght = newLenght; }
 
-       // public boolean checkPass(Password aPassword) { myPassword.equals(aPassword); }
-
+        public boolean checkPass(Password aPassword)
+            {
+                boolean isValid = false;
+                if (myPassword.equals(aPassword))
+                    {
+                        isValid = true;
+                    }
+                return isValid;
+            }
     }
